@@ -8,7 +8,7 @@ def wallis(n):
         x*=y
     return(2*x)
 
-
+from random import *
 def monte_carlo(n):
     dotcircle,dotsquare=0,0
     for i in range(n):
