@@ -4,7 +4,7 @@ import unittest
 def wallis(n):
     x=1
     for i in range(1,n+1):
-        y=(4*(i*2))/((4*(i*2))-1)
+        y=(4*(i**2))/((4*(i**2))-1)
         x*=y
     return(2*x)
 
