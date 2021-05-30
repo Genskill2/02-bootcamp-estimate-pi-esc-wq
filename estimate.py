@@ -8,6 +8,19 @@ def wallis(n):
         x*=y
     return(2*x)
 
+
+def monte_carlo(n):
+    dotcircle,dotsquare=0,0
+    for i in range(n):
+        x=random()
+        y=random()
+        if(x**2 + y**2)<=1:
+            dotcircle+=1
+            dotsquare+=1
+        else:
+            dotsquare+=1
+    return(dotcircle/dotsquare*4)
+
 class TestWallis(unittest.TestCase):
     def test_low_iters(self):
         for i in range(0, 5):
